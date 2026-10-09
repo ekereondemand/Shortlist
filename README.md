@@ -1,29 +1,24 @@
-# Restaurant Shotlist by Zentrik Digital — MVP v1.0
+# Restaurant Shotlist by Zentrik Digital — v3.0
 
-A mobile-first, no-account-needed restaurant filming checklist.
+A mobile-first filming companion for restaurant videographers. Static, no-account-needed, and deployable free on GitHub Pages.
 
 ## Included
-- Restaurant/project name, type and shoot date
-- Six shoot objectives, including a quick-shoot challenge
-- Prebuilt checklist templates grouped by category
-- Check-off progress tracking
-- Add custom shots and remove custom shots
-- Copy a shoot for a new visit
-- Export a plain-text checklist
-- Local browser storage (no backend/API required)
-- PWA manifest and SVG icon
+- Cinematic checklist with shoot progress, add shot, copy shoot, export text and print-to-PDF.
+- Specialised libraries for Chinese restaurants, bakery/pastry production, cake product shoots and cake production/decorating, general restaurant food, diners, taverns/pubs, café/beverages, fast food, grill/BBQ/steakhouse, Nigerian food, packaged food, restaurant ambience/customer experience, promotional campaigns and brand storytelling/BTS.
+- Synchronized checklist and visual mood-board views: same numbering, shot details and captured status; tap a mood-board card to jump to the corresponding checklist shot.
+- Browser localStorage: saved shoots stay on the current browser/device.
+- Mobile-first layout and PWA shell.
 
-## Run locally
-Open `index.html` in a modern browser. For best PWA behavior, serve over localhost or HTTPS.
+## Visual references
+Mood-board photos are illustrative references served from Unsplash image URLs and selected by shot subject. They are not a guarantee of an exact match to the client's food, restaurant, framing or creative direction. Review the visual reference and its current license/terms before any commercial redistribution. If the image host is unavailable, the card falls back to a reference placeholder.
 
-## Free deployment option
-1. Create a GitHub account and a new public repository named `zentrik-shotlist`.
-2. Upload all files in this folder to the repository root.
-3. Open repository Settings → Pages.
-4. Under Build and deployment, choose Deploy from a branch; select `main` and `/ (root)`; Save.
-5. Wait for GitHub Pages to publish and open the provided `https://YOUR-USERNAME.github.io/zentrik-shotlist/` address.
+## Publish on GitHub Pages (free)
+1. Unzip this package. Open the `zentrik-shotlist` folder.
+2. Upload the *contents* of that folder (including `index.html`) to the root of your public GitHub repository `zentrik-shotlist`.
+3. In repository Settings → Pages, choose **Deploy from a branch**, select `main` and `/(root)`, then Save.
+4. The public project URL will follow `https://YOUR-GITHUB-USERNAME.github.io/zentrik-shotlist/`. GitHub may take several minutes to publish.
 
-Alternative: deploy the folder to a static hosting provider such as Cloudflare Pages or Netlify. No build command is needed; publish directory is the project root.
-
-## Important MVP limitation
-This version saves data in the current browser/device only. It does not have cloud sync, user accounts, team sharing, a server database or AI-generated shots. Those require creating and configuring external accounts and adding credentials securely. Do not put private API keys in frontend files.
+## Known limits
+- This package is deploy-ready, but cannot publish itself to your GitHub account without authenticated repository access.
+- Data is local to the device/browser; there is no login, cloud sync or team sharing yet.
+- Images are remote illustrative references, not a bespoke licensed/AI-generated photo library.
